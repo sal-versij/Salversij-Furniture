@@ -1,0 +1,43 @@
+{
+  "schema_version": 1,
+  "quilt_loader": {
+    "group": "${group}",
+    "id": "salversijs_furniture_deco",
+    "version": "${version}",
+    "metadata": {
+      "name": "Salversij's Furniture and Decorations",
+      "description": "${description}",
+      "contributors": {
+        "salversij": "Author"
+      },
+      "icon": "assets/salversijs_furniture_deco/icon.png"
+    },
+    "intermediate_mappings": "net.fabricmc:intermediary",
+    "entrypoints": {
+      "init": [
+        "org.salversij.quilt.QuiltInitializer"
+      ]
+    },
+    "depends": [
+      {
+        "id": "quilt_loader",
+        "version": "*"
+      },
+      {
+        "id": "quilt_base",
+        "version": "*"
+      },
+      {
+        "id": "minecraft",
+        "version": ">=1.20.1"
+      },
+      {
+        "id": "architectury",
+        "version": ">=9.2.14"
+      }
+    ]
+  },
+  "mixin": [
+    "salversijs_furniture_deco.mixins.json"
+  ]
+}

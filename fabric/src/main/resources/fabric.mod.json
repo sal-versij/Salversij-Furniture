@@ -1,0 +1,37 @@
+{
+  "schemaVersion": 1,
+  "id": "salversijs_furniture_deco",
+  "version": "${version}",
+  "name": "Salversij's Furniture and Decorations",
+  "description": "${description}",
+  "authors": [
+    "salversij"
+  ],
+  "contact": {
+    "sources": "https://github.com/sal-versij/Salversij-Furniture"
+  },
+  "license": "CC0-1.0",
+  "icon": "assets/salversijs_furniture_deco/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "org.salversij.fabric.ExampleModFabric"
+    ],
+    "client": [
+      "org.salversij.fabric.client.ExampleModFabricClient"
+    ]
+  },
+  "mixins": [
+    "salversijs_furniture_deco.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.15.11",
+    "minecraft": "~1.20.1",
+    "java": ">=17",
+    "architectury": ">=9.2.14",
+    "fabric-api": "*"
+  },
+  "suggests": {
+    "another-mod": "*"
+  }
+}

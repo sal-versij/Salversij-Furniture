@@ -1,0 +1,33 @@
+modLoader = "javafml"
+loaderVersion = "[47,)"
+#issueTrackerURL = "${githubsource}/issues"
+#license = "${license}"
+
+[[mods]]
+modId = "salversijs_furniture_deco"
+version = "${version}"
+displayName = "Salversij's Furniture and Decorations"
+authors = "$salversij"
+description = "${description}"
+#logoFile = ""
+
+[[dependencies.salversijs_furniture_deco]]
+modId = "forge"
+mandatory = true
+versionRange = "[47,)"
+ordering = "NONE"
+side = "BOTH"
+
+[[dependencies.salversijs_furniture_deco]]
+modId = "minecraft"
+mandatory = true
+versionRange = "[1.20.1,)"
+ordering = "NONE"
+side = "BOTH"
+
+[[dependencies.salversijs_furniture_deco]]
+modId = "architectury"
+mandatory = true
+versionRange = "[9.2.14,)"
+ordering = "AFTER"
+side = "BOTH"
